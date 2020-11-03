@@ -1,0 +1,86 @@
+/*font-family: 'Shadows Into Light Two', cursive;
+font-family: 'Jost', sans-serif;*/
+
+/* Global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Frank-400';
+    src: url("fonts/FrankRuhlLibre-Medium.ttf");
+}
+@font-face {
+    font-family: 'Frank-500';
+    src: url("/fonts/FrankRuhlLibre-Regular.ttf");
+}
+@font-face {
+    font-family: 'Vibes-400';
+    src: url("/fonts/GreatVibes-Regular.ttf");
+}
+
+html {
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(2.4rem + 1vw);
+    --text: calc(1.4rem + 1vw);
+    --big: calc(10rem + 1vw);
+    --speical-color: #906272;
+    --main-color: #414141;
+    --main-color-op: #41414173;
+    --main-color-2: #9062723f;
+    --grey-text: #525252;
+    scroll-behavior: smooth;
+}
+
+body {font-family: "Frank-400", sans-serif; animation: opning 1s ease-in-out;}
+
+h1 {font-size: var(--header1); font-family: "Vibes-400", sans-serif;}
+
+li,
+button,
+label,
+input,
+a,
+p {font-size: var(--text);}
+
+h2 {font-size: var(--header2);}
+
+h3 {font-size: var(--header3);}
+
+h4,
+h5 {font-size: var(--header4);}
+
+ul {list-style: none;}
+
+a {text-decoration: none; color: black;}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Global styles */
+
+/* MEDIA QUARI */
+
+@media screen and (min-width: 1700px) {
+
+    html {
+        --header1: 3rem;
+        --header2: 5rem;
+        --header3: 4rem;
+        --header4: 3rem;
+        --text: 3rem;
+        --big: 9rem;
+    }
+}
+
+/* MEDIA QUARI */
